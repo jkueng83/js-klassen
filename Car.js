@@ -1,10 +1,11 @@
-class Car {
-    horsePower = 99;
-    constructor(brand, type, color, country = "Austria") {
+export default class Car {
+    
+    constructor(brand, type, color, horsePower = 100, country = "Austria") {
       this.brand = brand;
       this.type = type;
       this.color = color;
       this.country = country;
+      this.horsePower = horsePower;
     }
   
     printCarData() {
