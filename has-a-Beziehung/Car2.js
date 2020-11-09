@@ -1,23 +1,16 @@
-import Engine from './Engine.js';
+import Engine from "./Engine.js";
 
-export default class Car2{
+export default class Car2 {
+  constructor(brand = "Audi") {
+    this.brand = brand;
+  }
 
-    constructor( brand = "Audi"){
-        this.brand = brand;
-    }
+  setEngine(engine) {
+    this.engine = engine;
+  }
 
-    setEngine(engine){
-        this.engine = engine;
-    }
-
-    
-
-    dirve(){
-        this.engine.go();
-        console.log("brum brum!")
-    }
-
-
+  dirve() {    
+    console.log(this.brand + " starts engine: brum brum!");
+    this.engine.go();
+  }
 }
-
-
